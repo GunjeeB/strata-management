@@ -115,3 +115,12 @@ export default function Home() {
     </>
   );
 }
+body {
+  background-color: #f8f8f8; /* Light gray background */
+  color: #333; /* Dark text */
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #ff6600; /* Orange heading */
+}
