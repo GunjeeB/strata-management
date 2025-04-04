@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>About Strata Web</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <p>Strata Web is dedicated to providing quality web development services...</p>
+    <button id="read-more-btn">Read More</button>
+    <p id="more-info" style="display:none;">We specialize in designing responsive websites that are both user-friendly and highly functional.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Strata Web</p>
+  </footer>
+
+  <script>
+    document.getElementById('read-more-btn').onclick = function() {
+      document.getElementById('more-info').style.display = 'block';
+      this.style.display = 'none';
+    };
+  </script>
+</body>
+</html>
