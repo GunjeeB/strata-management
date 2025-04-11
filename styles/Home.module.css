@@ -107,4 +107,18 @@
   border-radius: 12px;
 }
 
+.logoFixed {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.logoFixed img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+
 
