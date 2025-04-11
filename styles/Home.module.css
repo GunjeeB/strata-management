@@ -1,43 +1,47 @@
+/* General Styles */
 .container {
-  font-family: sans-serif;
-  padding: 0 2rem;
-  background-color: #f5f5f5;
-  color: #333;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #f4f4f4;
 }
 
-.header {
-  text-align: center;
+.sidebar {
+  width: 250px;
   background-color: #6A1B9A;
   color: white;
-  padding: 2rem;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  background-color: #333;
+.sidebarTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
-.navLinks {
-  display: flex;
-  list-style-type: none;
+.sidebarMenu {
+  list-style: none;
   padding: 0;
 }
 
-.navLinks li {
-  margin: 0 20px;
+.sidebarMenu li {
+  margin: 15px 0;
 }
 
-.navLinks a {
-  text-decoration: none;
+.sidebarMenu a {
   color: white;
+  text-decoration: none;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 10px;
   display: block;
+  transition: background-color 0.3s;
 }
 
-.navLinks a:hover {
-  background-color: #6A1B9A;
+.sidebarMenu a:hover {
+  background-color: #4A148C;
 }
 
 .dropdown {
@@ -51,9 +55,9 @@
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #4A148C;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -68,22 +72,55 @@
   background-color: #6A1B9A;
 }
 
+/* Main Content Area */
 .main {
-  padding: 2rem 0;
+  margin-left: 270px;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  background-color: #6A1B9A;
+  color: white;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+}
+
+.welcomeText {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.subText {
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .section {
-  margin-bottom: 2rem;
-  padding: 1rem;
   background-color: white;
-  border-left: 4px solid #6A1B9A;
+  margin-bottom: 30px;
+  padding: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+h2 {
+  color: #6A1B9A;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer */
 .footer {
-  text-align: center;
-  padding: 1rem;
   background-color: #6A1B9A;
   color: white;
+  padding: 20px;
+  text-align: center;
 }
 
