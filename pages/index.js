@@ -1,22 +1,24 @@
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState('home');
+
   return (
     <div className={styles.container}>
       {/* Sidebar */}
       <div className={styles.sidebar}>
         <div className={styles.sidebarTitle}>Strata Committee</div>
         <ul className={styles.sidebarMenu}>
-          <li className={styles.menuItem}>
+          <li className={styles.menuItem} onClick={() => setActiveSection('home')}>
             <a href="#home">Home</a>
           </li>
-          <li className={styles.menuItem}>
+          <li className={styles.menuItem} onClick={() => setActiveSection('services')}>
             <a href="#services">Committee Responsibilities</a>
           </li>
-          <li className={styles.menuItem}>
+          <li className={styles.menuItem} onClick={() => setActiveSection('funds')}>
             <a href="#funds">Funds Management</a>
           </li>
-          <li className={styles.menuItem}>
+          <li className={styles.menuItem} onClick={() => setActiveSection('contact')}>
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -24,35 +26,53 @@ export default function Home() {
 
       {/* Main Content */}
       <div className={styles.main}>
-        {/* Header Section */}
-        <div className={styles.header}>
-          <h1 className={styles.welcomeText}>Welcome to Your Strata Committee Portal</h1>
-          <p className={styles.subText}>Your trusted platform for managing strata-titled buildings in NSW</p>
-        </div>
+        {/* Home Section */}
+        {activeSection === 'home' && (
+          <div className={styles.header}>
+            <h1 className={styles.welcomeText}>
+              Empowering Strata Communities with Smart Management
+            </h1>
+            <p className={styles.subText}>
+              A modern portal for building harmony and transparency in your strata community.
+            </p>
+          </div>
+        )}
 
         {/* Committee Responsibilities Section */}
-        <div className={styles.section} id="services">
-          <h2 className={styles.sectionTitle}>Committee Responsibilities</h2>
-          <p className={styles.sectionText}>
-            The Strata Committee is responsible for managing the Owners Corporation, including maintenance of common areas, insurance, and financial oversight.
-          </p>
-        </div>
+        {activeSection === 'services' && (
+          <div className={styles.section} id="services">
+            <h2 className={styles.sectionTitle}>Committee Responsibilities</h2>
+            <p className={styles.sectionText}>
+              The Strata Committee oversees building operations, ensures compliance with NSW legislation,
+              handles disputes, and manages records. It must include a Treasurer, Secretary, and Chairperson,
+              with up to 9 elected members.
+            </p>
+          </div>
+        )}
 
         {/* Funds Management Section */}
-        <div className={styles.section} id="funds">
-          <h2 className={styles.sectionTitle}>Funds Management</h2>
-          <p className={styles.sectionText}>
-            Strata owners contribute levies to the administration and capital works funds, which are used for the building's maintenance and future developments.
-          </p>
-        </div>
+        {activeSection === 'funds' && (
+          <div className={styles.section} id="funds">
+            <h2 className={styles.sectionTitle}>Funds Management</h2>
+            <p className={styles.sectionText}>
+              Levies are collected into an administrative fund for daily operations and a capital works fund for long-term upgrades. 
+              Transparency and budgeting are key responsibilities of the committee.
+            </p>
+          </div>
+        )}
 
         {/* Contact Section */}
-        <div className={styles.section} id="contact">
-          <h2 className={styles.sectionTitle}>Contact Us</h2>
-          <p className={styles.sectionText}>
-            For any inquiries or issues, please contact the Strata Committee via email or phone.
-          </p>
-        </div>
+        {activeSection === 'contact' && (
+          <div className={styles.section} id="contact">
+            <h2 className={styles.sectionTitle}>Contact Us</h2>
+            <p className={styles.sectionText}>
+              Reach out to the committee via: <br />
+              📧 Email: contact@stratacommittee.nsw.au <br />
+              ☎️ Phone: (02) 1234 5678 <br />
+              🕒 Office Hours: 9am - 5pm, Mon - Fri
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Footer */}
