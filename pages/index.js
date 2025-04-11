@@ -6,6 +6,12 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      {/* Brand Logo */}
+      <div className={styles.brandLogo}>
+        <span className={styles.logoIcon}>💡</span>
+        <span className={styles.logoText}>SmartScheme</span>
+      </div>
+
       {/* Sidebar */}
       <div className={styles.sidebar}>
         <div className={styles.sidebarTitle}>Strata Committee</div>
@@ -38,7 +44,7 @@ export default function Home() {
                 A modern portal for building harmony and transparency in your strata community.
               </p>
             </div>
-          </div> // <-- ✅ this closing was missing
+          </div>
         )}
 
         {/* Intro Section */}
