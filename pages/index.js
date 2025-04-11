@@ -6,9 +6,13 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      {/* Brand Logo */}
-      <div className={styles.brandLogo}>
-        <span className={styles.logoIcon}>💡</span>
+      {/* Brand Logo Top Right */}
+      <div className={styles.logoContainer}>
+        <img
+          src="/smartscheme-logo.png"
+          alt="SmartScheme Logo"
+          className={styles.logoImage}
+        />
         <span className={styles.logoText}>SmartScheme</span>
       </div>
 
@@ -33,7 +37,6 @@ export default function Home() {
 
       {/* Main Content */}
       <div className={styles.main}>
-        {/* Home Section */}
         {activeSection === 'home' && (
           <div className={styles.header}>
             <div className={styles.heroImage}>
@@ -47,7 +50,6 @@ export default function Home() {
           </div>
         )}
 
-        {/* Intro Section */}
         <div className={styles.section} id="about">
           <h2 className={styles.sectionTitle}>About Our Community</h2>
           <p className={styles.sectionText}>
@@ -58,7 +60,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Committee Responsibilities Section */}
         {activeSection === 'services' && (
           <div className={styles.section} id="services">
             <h2 className={styles.sectionTitle}>Committee Responsibilities</h2>
@@ -70,7 +71,6 @@ export default function Home() {
           </div>
         )}
 
-        {/* Funds Management Section */}
         {activeSection === 'funds' && (
           <div className={styles.section} id="funds">
             <h2 className={styles.sectionTitle}>Funds Management</h2>
@@ -81,7 +81,6 @@ export default function Home() {
           </div>
         )}
 
-        {/* Contact Section */}
         {activeSection === 'contact' && (
           <div className={styles.section} id="contact">
             <h2 className={styles.sectionTitle}>Contact Us</h2>
