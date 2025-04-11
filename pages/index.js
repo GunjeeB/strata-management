@@ -30,14 +30,27 @@ export default function Home() {
         {/* Home Section */}
         {activeSection === 'home' && (
           <div className={styles.header}>
-            <h1 className={styles.welcomeText}>
-              Empowering Strata Communities with Smart Management
-            </h1>
-            <p className={styles.subText}>
-              A modern portal for building harmony and transparency in your strata community.
-            </p>
-          </div>
+            <div className={styles.heroImage}>
+              <h1 className={styles.welcomeText}>
+                Empowering Strata Communities with Smart Management
+              </h1>
+              <p className={styles.subText}>
+                A modern portal for building harmony and transparency in your strata community.
+              </p>
+            </div>
+          </div> // <-- ✅ this closing was missing
         )}
+
+        {/* Intro Section */}
+        <div className={styles.section} id="about">
+          <h2 className={styles.sectionTitle}>About Our Community</h2>
+          <p className={styles.sectionText}>
+            Nestled in the heart of New South Wales, our strata community takes pride in collaboration,
+            transparency, and responsibility. Governed by the Strata Schemes Management Act (2015),
+            we work together to maintain a safe, well-maintained and harmonious living environment for all lot owners.
+            From budgeting and insurance to common area upkeep, we ensure everything is handled with care.
+          </p>
+        </div>
 
         {/* Committee Responsibilities Section */}
         {activeSection === 'services' && (
@@ -83,6 +96,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-
