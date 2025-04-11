@@ -1,25 +1,36 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 .container {
-  font-family: Arial, sans-serif;
   display: flex;
   background-color: #f4f4f4;
 }
 
 .sidebar {
   width: 250px;
-  background-color: #6A1B9A;
+  background-color: #8E44AD; /* Softer Purple */
   color: white;
   padding: 20px;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebarTitle {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #F4F4F4;
 }
 
 .sidebarMenu {
@@ -28,20 +39,20 @@
 }
 
 .sidebarMenu li {
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .sidebarMenu a {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  padding: 10px;
+  padding: 12px;
   display: block;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .sidebarMenu a:hover {
-  background-color: #4A148C;
+  background-color: #732D91; /* Darker Purple */
 }
 
 .dropdown {
@@ -55,7 +66,7 @@
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: #4A148C;
+  background-color: #732D91;
   min-width: 200px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -69,7 +80,7 @@
 }
 
 .dropdownContent a:hover {
-  background-color: #6A1B9A;
+  background-color: #5D1D75;
 }
 
 /* Main Content Area */
@@ -81,46 +92,56 @@
 
 .header {
   text-align: center;
-  background-color: #6A1B9A;
+  background-color: #8E44AD; /* Softer Purple */
   color: white;
-  padding: 50px 20px;
+  padding: 70px 20px;
   margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .welcomeText {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 700;
+  color: #F4F4F4;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .subText {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 10px;
+  color: #D1D8E0;
 }
 
 .section {
   background-color: white;
   margin-bottom: 30px;
   padding: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .sectionTitle {
-  color: #6A1B9A;
+  color: #8E44AD; /* Softer Purple */
   font-size: 28px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .sectionText {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  color: #555;
 }
 
 /* Footer */
 .footer {
-  background-color: #6A1B9A;
+  background-color: #8E44AD;
   color: white;
   padding: 20px;
   text-align: center;
+  margin-top: 40px;
+  border-radius: 10px;
 }
 

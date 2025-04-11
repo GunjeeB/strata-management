@@ -30,22 +30,22 @@ export default function Home() {
       <main className={styles.main}>
         <header className={styles.header}>
           <h1 className={styles.welcomeText}>Welcome to Your Strata Committee Portal</h1>
-          <p className={styles.subText}>Your gateway to managing the building with ease.</p>
+          <p className={styles.subText}>A modern and efficient way to manage the building.</p>
         </header>
 
         <section className={styles.section}>
-          <h2>Our Strata Services</h2>
-          <p>As part of the Owners Corporation, our services include the management of common areas, insurance, and maintenance. Our goal is to provide a seamless experience for all residents.</p>
+          <h2 className={styles.sectionTitle}>Our Strata Services</h2>
+          <p className={styles.sectionText}>As part of the Owners Corporation, we manage common areas, insurance, and maintenance. Our team is dedicated to ensuring smooth operations and services for all residents.</p>
         </section>
 
         <section className={styles.section}>
-          <h2>Meet the Committee</h2>
-          <p>The Strata Committee is responsible for the building's management. It consists of elected owners, including the Treasurer, Secretary, and Chairperson, who oversee the proper management of the property.</p>
+          <h2 className={styles.sectionTitle}>Meet the Committee</h2>
+          <p className={styles.sectionText}>The Strata Committee consists of elected owners, including the Treasurer, Secretary, and Chairperson. We ensure that the property is well-managed and serve the community with transparency and professionalism.</p>
         </section>
 
         <section className={styles.section}>
-          <h2>What is Strata Management?</h2>
-          <p>Strata-titled apartment buildings are governed by the Strata Schemes Management Act (2015), ensuring collective responsibility for the maintenance and protection of shared spaces. The Owners Corporation handles all matters related to common areas, insurance, and more.</p>
+          <h2 className={styles.sectionTitle}>What is Strata Management?</h2>
+          <p className={styles.sectionText}>Strata-titled apartment buildings are governed by the Strata Schemes Management Act (2015), which ensures that all common areas are maintained and managed efficiently. The Owners Corporation is responsible for making sure that every resident benefits from a well-managed and secure environment.</p>
         </section>
       </main>
 
@@ -56,4 +56,6 @@ export default function Home() {
     </div>
   )
 }
+
+
 
