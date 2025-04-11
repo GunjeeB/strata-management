@@ -37,10 +37,8 @@ export default function Home() {
               <p className={styles.subText}>
                 A modern portal for building harmony and transparency in your strata community.
               </p>
-              {/* Add Image Here */}
-              <img src="/home.jpg" alt="Strata Web Logo" className={styles.heroImage} />
             </div>
-          </div>
+          </div> // <-- ✅ this closing was missing
         )}
 
         {/* Intro Section */}
