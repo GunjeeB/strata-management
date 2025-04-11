@@ -8,7 +8,22 @@ export default function Home() {
         <title>Strata Committee</title>
       </Head>
 
+      {/* Navigation Bar */}
       <header className={styles.header}>
+        <nav className={styles.navbar}>
+          <ul className={styles.navLinks}>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li className={styles.dropdown}>
+              <a href="/services">Services</a>
+              <div className={styles.dropdownContent}>
+                <a href="/strata-services">Strata Services</a>
+                <a href="/committee-roles">Committee Roles</a>
+              </div>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
         <h1>Welcome to Our Strata Committee</h1>
         <p>Supporting the smooth management of our apartment building.</p>
       </header>
