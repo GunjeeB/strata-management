@@ -8,12 +8,10 @@ export default function Home() {
     <div className={styles.container}>
       {/* Brand Logo Top Right */}
       <div className={styles.logoContainer}>
-        <img
-          src="/smartscheme-logo.png"
-          alt="SmartScheme Logo"
-          className={styles.logoImage}
-        />
-        <span className={styles.logoText}>SmartScheme</span>
+        {/* Logo replaced with text and emoji */}
+        <span className={styles.logoText}>
+          🏡SmartScheme 
+        </span>
       </div>
 
       {/* Sidebar */}
@@ -101,3 +99,5 @@ export default function Home() {
     </div>
   );
 }
+
+
