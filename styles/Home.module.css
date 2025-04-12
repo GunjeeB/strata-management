@@ -5,6 +5,7 @@
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f5fa;
+  flex-direction: column; /* Ensures flexibility for smaller screens */
 }
 
 /* Sidebar styling */
@@ -17,6 +18,9 @@
   top: 0;
   height: 100vh;
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Ensures all content is stacked vertically */
+  justify-content: flex-start;
 }
 
 .sidebarTitle {
@@ -29,6 +33,7 @@
 .sidebarMenu {
   list-style: none;
   padding: 0;
+  flex-grow: 1; /* Fills available space */
 }
 
 .menuItem {
@@ -52,6 +57,8 @@
   flex: 1;
   padding: 40px;
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -65,11 +72,13 @@
   color: #1a1a2e; /* black-blue */
   text-shadow: 1px 1px 4px #ccccff;
 }
+
 .subText {
   font-size: 1.2rem;
   color: #333366;
   margin-top: 10px;
 }
+
 /* Sections */
 .section {
   margin-bottom: 50px;
@@ -98,6 +107,7 @@
   margin-top: 50px;
 }
 
+/* Hero Image */
 .heroImage {
   background-image: url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
@@ -105,8 +115,16 @@
   padding: 100px 20px;
   text-align: center;
   border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for visual depth */
 }
 
+.heroImage h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Enhanced text visibility */
+}
+
+/* Logo Container */
 .logoFixed {
   position: fixed;
   top: 20px;
@@ -119,6 +137,7 @@
   height: auto;
   object-fit: contain;
 }
+
 .logoContainer {
   position: fixed;
   top: 20px;
@@ -145,10 +164,56 @@
   color: #333;
 }
 
+/* Image Container for dynamic backgrounds */
 .imageContainer {
   background-image: url('/images/home.jpg');
   background-size: cover;
   background-position: center;
-  height: 300px; /* эсвэл өөр хэмжээгээр */
+  height: 300px;
+  border-radius: 12px;
 }
 
+/* Main Button Styles */
+.mainButton {
+  background-color: #6ec5ff;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mainButton:hover {
+  background-color: #4a94c7;
+}
+
+.landingButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Links and Other Text */
+.signinLink {
+  color: #4a94c7;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.signinLink:hover {
+  text-decoration: underline;
+}
+
+/* Overlay for fullscreen background */
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darkened overlay */
+  z-index: -1;
+}
