@@ -171,3 +171,146 @@
   background-position: center;
   height: 300px; /* эсвэл өөр хэмжээгээр */
 }
+
+.fundsWrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fundText {
+  flex: 1 1 50%;
+}
+
+.fundImage {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.fundIllustration {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Wrapper for text and image */
+.contentWrapper {
+  display: flex;
+  align-items: center;  /* Aligns text and image vertically */
+  justify-content: space-between;  /* Adds space between text and image */
+  margin-top: 20px;
+}
+
+/* Text content styles */
+.textContent {
+  flex: 1;  /* Allows text to take up available space */
+  margin-right: 20px;  /* Adds space between the text and image */
+}
+
+.imageContent {
+  flex-shrink: 0;  /* Prevents the image from shrinking */
+}
+
+.illustration {
+  width: 150px;  /* Reduce the image size */
+  height: auto;  /* Maintain aspect ratio */
+  border-radius: 8px;  /* Optional: for rounded corners */
+}
+/* Portal Section styling */
+.portalSection {
+  margin-top: 50px;
+  background-color: #f0f0f5;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.portalTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3a3a55;
+  margin-bottom: 20px;
+}
+
+.portalDescription {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.enterIDWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.enterIDInput {
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.enterIDButton {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enterIDButton:hover {
+  background-color: #45a049;
+}
+
+.portalLink {
+  color: #ffcc00; /* Yellow to make it stand out */
+  text-decoration: none;
+}
+
+.portalLink:hover {
+  color: #ff9900;
+  text-decoration: underline;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid #8a2be2; /* Purple border */
+  background-color: #f1f1f1;
+  color: #4b0082; /* Dark purple text */
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #8a2be2; /* Keep the purple border color on focus */
+  background-color: #e8e8ff; /* Light purple background when focused */
+}
+.portalButtonContainer {
+  margin-top: 10px; /* Space between the ID input and the Go to Portal button */
+  text-align: center;
+}
+
+.portalButton {
+  background-color: purple;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.portalButton:hover {
+  background-color: darkviolet;
+}
