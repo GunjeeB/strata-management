@@ -3,6 +3,18 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
+  const [isPortalOpen, setIsPortalOpen] = useState(false);
+  const [userId, setUserId] = useState('');
+
+  const handlePortalToggle = () => {
+    setIsPortalOpen(!isPortalOpen);
+  };
+
+  const handleSubmit = () => {
+    // Submit logic here, e.g., send the userId to the server or validate it
+    console.log('User ID submitted: ', userId);
+    setIsPortalOpen(false); // Close the portal after submission
+  };
 
   return (
     <div className={styles.container}>
@@ -27,14 +39,11 @@ export default function Home() {
           <li className={styles.menuItem} onClick={() => setActiveSection('contact')}>
             <a href="#contact">Contact</a>
           </li>
+          {/* Go to Portal Bar */}
+          <li className={styles.menuItemPortal}>
+            <a href="#portal" onClick={handlePortalToggle} className={styles.portalLink}>Go to Portal</a>
+          </li>
         </ul>
-
-        {/* Go to Portal Button */}
-        <div className={styles.portalButton}>
-          <a href="https://your-portal-link.com" target="_blank" rel="noopener noreferrer">
-            Go to Portal
-          </a>
-        </div>
       </div>
 
       {/* Main Content */}
@@ -95,6 +104,24 @@ export default function Home() {
           </div>
         )}
       </div>
+
+      {/* Portal Modal */}
+      {isPortalOpen && (
+        <div className={styles.portalModal}>
+          <div className={styles.portalContent}>
+            <h2>Enter Your ID</h2>
+            <input
+              type="text"
+              placeholder="Enter ID"
+              value={userId}
+              onChange={(e) => setUserId(e.target.value)}
+              className={styles.inputField}
+            />
+            <button onClick={handleSubmit} className={styles.submitButton}>Submit</button>
+            <button onClick={handlePortalToggle} className={styles.closeButton}>Close</button>
+          </div>
+        </div>
+      )}
 
       {/* Footer */}
       <div className={styles.footer}>
