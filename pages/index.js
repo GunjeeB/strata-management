@@ -125,7 +125,7 @@ export default function Home() {
             <p className={styles.sectionText}>
               Reach out to the committee via: <br />
               📧 Email: contact@stratavillacommittee.nsw.au <br />
-              ☎️ Phone: (02) 1234 6678 <br />
+              ☎️ Phone: (02) 1234 5678 <br />
               🕒 Office Hours: 9am - 5pm, Mon - Fri
             </p>
             <div style={{ height: '160px' }}></div>
