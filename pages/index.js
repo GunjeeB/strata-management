@@ -52,7 +52,7 @@ export default function Home() {
           <div className={styles.header}>
             <div className={styles.imageContainer}>
               <h1 className={styles.welcomeText}>
-                Empowering Strata Communities with Smart Management
+                Empowering Strata Communities  with Smart Management
               </h1>
               <p className={styles.subText}>
                 A modern portal for building harmony and transparency in your strata community.
