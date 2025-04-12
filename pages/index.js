@@ -131,17 +131,17 @@ export default function Home() {
             <div style={{ height: '160px' }}></div>
             <h3>Meet the Strata Committee Members:</h3>
             <ul>
-              <li><strong>John Doe</strong> - Chairperson<br />📧 john@stratavillacommittee.nsw.au | ☎️ (02) 1234 0001</li>
+              <li><strong>John Doe</strong> - Chairperson<br />📧 {process.env.NEXT_PUBLIC_EMAIL_USER1} | ☎️ (02) 1234 0001</li>
               <div style={{ height: '50px' }}></div>
-              <li><strong>Jane Smith</strong> - Secretary<br />📧 jane@stratavillacommittee.nsw.au | ☎️ (02) 1234 0002</li>
+              <li><strong>Jane Smith</strong> - Secretary<br />📧 {process.env.NEXT_PUBLIC_EMAIL_USER2} | ☎️ (02) 1234 0002</li>
               <div style={{ height: '50px' }}></div>
-              <li><strong>Gunjlkham Baasandorj</strong> - Treasurer<br />📧 gunjeeb@stratavillacommittee.nsw.au | ☎️ (02) 1234 0003</li>
+              <li><strong>Gunjlkham Baasandorj</strong> - Treasurer<br />📧 {process.env.NEXT_PUBLIC_EMAIL_USER3} | ☎️ (02) 1234 0003</li>
               <div style={{ height: '50px' }}></div>
-              <li><strong>Emily Williams</strong> - Member<br />📧 emily@stratavillacommittee.nsw.au | ☎️ (02) 1234 0004</li>
+              <li><strong>Emily Williams</strong> - Member<br />📧 {process.env.NEXT_PUBLIC_EMAIL_USER4} | ☎️ (02) 1234 0004</li>
               <div style={{ height: '50px' }}></div>
-              <li><strong>David Brown</strong> - Member<br />📧 david@stratavillacommittee.nsw.au | ☎️ (02) 1234 0005</li>
+              <li><strong>David Brown</strong> - Member<br />📧 {process.env.NEXT_PUBLIC_EMAIL_USER5} | ☎️ (02) 1234 0005</li>
               <div style={{ height: '50px' }}></div>
-              <li><strong>Olivia Green</strong> - Member<br />📧 olivia@stratavillacommittee.nsw.au | ☎️ (02) 1234 0006</li>
+              <li><strong>Olivia Green</strong> - Member<br />📧 {process.env.NEXT_PUBLIC_EMAIL_USER6} | ☎️ (02) 1234 0006</li>
             </ul>
           </div>
         )}
@@ -186,3 +186,4 @@ export default function Home() {
     </div>
   );
 }
+
