@@ -12,7 +12,7 @@ export default function Home() {
 
   const handleSubmit = () => {
     // Submit logic here, e.g., send the userId to the server or validate it
-    console.log('User ID submitted: ', userId);
+    console.log('User ID entered: ', userId);
     setIsPortalOpen(false); // Close the portal after submission
   };
 
