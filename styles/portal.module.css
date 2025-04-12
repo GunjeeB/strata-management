@@ -1,56 +1,82 @@
-/* styles/Portal.module.css */
+/* Portal.module.css */
 
-.container {
-    padding: 20px;
+.portalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: #f5f5fa;
-    min-height: 100vh;
   }
   
-  .header {
+  .portalContent {
+    background-color: #3a3a55;
+    color: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .portalTitle {
     font-size: 2rem;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    color: #b19cd9; /* Purple theme */
   }
   
-  .section {
-    margin-bottom: 40px;
-  }
-  
-  .sectionTitle {
-    font-size: 1.5rem;
-    color: #3a3a55;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #b19cd9;
-  }
-  
-  .sectionText {
-    font-size: 1.2rem;
-    color: #333;
-  }
-  
-  .projectList {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .projectItem {
+  .portalDescription {
     font-size: 1.1rem;
-    color: #333;
-    margin: 10px 0;
+    color: #cce6ff;
+    margin-bottom: 20px;
   }
   
-  .backButton {
+  .portalCallToAction {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .portalCallToAction strong {
+    color: #b19cd9;
+  }
+  
+  .portalForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .inputField {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #cce6ff;
+    color: #333;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .inputField:focus {
+    border: 2px solid #6ec5ff;
+  }
+  
+  .submitButton {
     padding: 10px 20px;
-    background-color: #4caf50;
+    font-size: 1.1rem;
+    background-color: #b19cd9;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    transition: 0.3s;
   }
   
-  .backButton:hover {
-    background-color: #45a049;
+  .submitButton:hover {
+    background-color: #6ec5ff;
   }
   
