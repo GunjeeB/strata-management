@@ -145,5 +145,10 @@
   color: #333;
 }
 
-
+.imageContainer {
+  background-image: url('/images/home.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* эсвэл өөр хэмжээгээр */
+}
 

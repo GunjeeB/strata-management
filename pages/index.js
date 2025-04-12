@@ -16,7 +16,7 @@ export default function Home() {
 
       {/* Sidebar */}
       <div className={styles.sidebar}>
-        <div className={styles.sidebarTitle}>Strata Committee</div>
+        <div className={styles.sidebarTitle}>⚖️Strata Committee</div>
         <ul className={styles.sidebarMenu}>
           <li className={styles.menuItem} onClick={() => setActiveSection('home')}>
             <a href="#home">Home</a>
@@ -37,7 +37,7 @@ export default function Home() {
       <div className={styles.main}>
         {activeSection === 'home' && (
           <div className={styles.header}>
-            <div className={styles.heroImage}>
+            <div className={styles.imageContainer}>
               <h1 className={styles.welcomeText}>
                 Empowering Strata Communities with Smart Management
               </h1>
