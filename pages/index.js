@@ -165,7 +165,7 @@ export default function Home() {
                   <li><strong>Maintenance Requests:</strong> Submit maintenance requests and track their status through the portal.</li>
                 </ul>
                 <br />
-                To get started, simply enter your ID below to access your personalized portal experience.
+                To go to portal, simply enter your ID below to access your personalized portal experience.
               </p>
               <br />
               (Check your ID from the apartment contract, it contains your building and unit number)
